@@ -7,6 +7,7 @@ import { AR_One_Sans } from 'next/font/google';
 import { Roboto } from 'next/font/google';
 import  {Open_Sans}  from 'next/font/google';
 import { Noto_Sans } from 'next/font/google'; 
+import Link from 'next/link';
 
 
 const anuphan = Anuphan({ subsets: ['latin'], weight: '600' });
@@ -110,9 +111,9 @@ export default function LoginPage() {
           {/* Sign Up Link */}
           <p className={`mt-16 text-sm text-white ${openSans.className}`}>
             Not registered yet? 
-            <a href="#" className={`ml-1 font text-blue-700 underline hover:text-blue-500 ${openSans.className}`}>
+            <Link href="/Authentication/signup" className={`ml-1 font text-blue-700 underline hover:text-blue-500 ${openSans.className}`}>
               Create an account
-            </a>
+            </Link>
           </p>
         </div>
       </section>
